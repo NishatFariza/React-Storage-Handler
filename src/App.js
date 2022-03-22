@@ -1,10 +1,11 @@
-import Cosmetic from "./components/Cosmetics/Cosmetic";
+
+import Cosmetics from "./components/Cosmetics/Cosmetics";
 import Shoes from "./components/Shoes/Shoes";
 
 function App() {
   return (
     <div className="App">
-      <Cosmetic></Cosmetic>
+      <Cosmetics></Cosmetics>
       <Shoes></Shoes>
     </div>
   );
