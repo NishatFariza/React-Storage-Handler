@@ -11,7 +11,7 @@ const Cosmetics = () => {
            .then(data => setCosmetic(data))
     }, [])
     return (
-        <div>
+        <div className='cosmetic-container'>
             {
                 cosmetics.map(cosmetic =><Cosmetic
                      data={cosmetic}
