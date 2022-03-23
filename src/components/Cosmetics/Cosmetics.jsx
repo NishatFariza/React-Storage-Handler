@@ -11,7 +11,10 @@ const Cosmetics = () => {
            .then(data => setCosmetic(data))
     }, [])
     return (
-        <div className='cosmetic-container'>
+       <div className='cosmetic-shop'>
+           <h1>Welcome To My Cosmetic Store</h1>
+            <div className='cosmetic-container'>
+            
             {
                 cosmetics.map(cosmetic =><Cosmetic
                      data={cosmetic}
@@ -20,6 +23,7 @@ const Cosmetics = () => {
                     
             }
         </div>
+       </div>
     );
 };
 
