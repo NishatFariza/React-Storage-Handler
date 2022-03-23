@@ -15,10 +15,10 @@ const addToDb = id => {
     }
 
      //add quantity
-   const quality = shoppingCart[id];
-   if(quality){
+   const quantity = shoppingCart[id];
+   if(quantity){
     //    console.log('Already exists');
-       const newQuantity = quality + 1;
+       const newQuantity = quantity + 1;
        shoppingCart[id] = newQuantity;
     //    localStorage.setItem(id, newQuantity)
    }
@@ -45,8 +45,8 @@ const removeFromDb = id => {
 
 }
 
-const deleteShoppingCart = () => {
+const deleteAllShoppingCart = () => {
     localStorage.removeItem('shopping-cart')
 }
 
-export {addToDb, removeFromDb, deleteShoppingCart}
+export {addToDb, removeFromDb, deleteAllShoppingCart}
